@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics</title>
+  </head>
+  <body>
+    <a id="top"></a>
+    <a href="#tables">Tables</a>
+    <a href="#list">List</a>
+    <!--Headers-->
+    <h1>Header 1...</h1>
+    <h2>Header 2...</h2>
+    <h3>Header 3...</h3>
+    <h4>Header 4...</h4>
+    <h5>Header 5...</h5>
+    <h6>Header 6...</h6>
+    <!--Absolute path example-->
+    <img
+      src="C:\Users\rskum\Downloads\comp.jpg"
+      alt="test image"
+      width="400px"
+      height="300px"
+    />
+    <!--Relative path example-->
+    <img src="../images/comp.jpg" alt="test image" />
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <pre>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </pre>
+    <a id="tables"></a>
+    <!--Tables-->
+    <hr />
+    <table>
+      <!--head section-->
+      <caption>
+        <b> <i>Table Example</i></b>
+      </caption>
+      <thead>
+        <!--table row-->
+        <tr>
+          <th>Dept No</th>
+          <!--table column-->
+          <th>Dept Name</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <!--body section-->
+      <tbody>
+        <tr>
+          <td>10</td>
+          <td>Accounting</td>
+          <td>Newyork</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Research</td>
+          <td>Dallas</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Sales</td>
+          <td>Chicago</td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>Operations</td>
+          <td>Boston</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Nested Tables-->
+    <hr />
+    <table>
+      <caption>
+        <b> <i>Neted Table Example</i></b>
+      </caption>
+      <thead>
+        <tr>
+          <th>Zone</th>
+          <th>State</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>South</td>
+          <td>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Capital City</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Karnataka</td>
+                  <td>Bengaluru</td>
+                </tr>
+                <tr>
+                  <td>Telangana</td>
+                  <td>Hyderabad</td>
+                </tr>
+                <tr>
+                  <td>Tamilnadu</td>
+                  <td>Chennai</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Column Span example-->
+    <hr />
+    <caption>
+      <b> <i>Column Span Example</i></b>
+    </caption>
+    <table>
+      <thead>
+        <tr>
+          <th>Emp Name</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">HR</td>
+        </tr>
+        <tr>
+          <td>Lathika</td>
+          <td>55000</td>
+        </tr>
+        <tr>
+          <td>Sandeep</td>
+          <td>40000</td>
+        </tr>
+        <tr>
+          <td colspan="2">Sales</td>
+        </tr>
+        <tr>
+          <td>Sonia</td>
+          <td>45000</td>
+        </tr>
+        <tr>
+          <td>Raju</td>
+          <td>56000</td>
+        </tr>
+        <tr>
+          <td>Ajay</td>
+          <td>45000</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <a id="list"></a>
+    <!--List -->
+    <!--Ordered List-->
+    <h3>Order List</h3>
+    <ol>
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ol>
+
+    <ol type="a">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ol>
+    <ol type="i">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ol>
+
+    <ol type="A">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ol>
+    <ol type="I">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ol>
+
+    <ol type="a" start="5">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ol>
+    <ol start="10" type="i">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ol>
+    <hr />
+    <!--Unordered List-->
+    <h3>Unordered List</h3>
+    <ul style="list-style-type: disc">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ul>
+    <ul style="list-style-type: circle">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ul>
+    <ul style="list-style-type: square">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ul>
+    <ul style="list-style-type: none">
+      <li>India</li>
+      <li>SriLanka</li>
+      <li>China</li>
+    </ul>
+    <hr />
+
+    <!--Links/anchor tags-->
+    <a href="#">Link</a>
+    <a href="http://www.google.com" target="_self">google</a>
+    <a href="F:\Aug_02_batch\html\test.htm">Test</a>
+    <a href="test.htm" target="_blank">Test1</a>
+    <a href="#top">Top</a>
+  </body>
+</html>
