@@ -10,7 +10,14 @@
     <h3>Register Form</h3>
     <form>
       <label id="firstName">FirstName</label>
-      <input for="firstName" type="text" placeholder="Enter first name" />
+      <input
+        for="firstName"
+        type="text"
+        placeholder="Enter first name"
+        required
+        autofocus
+        pattern="[a-zA-Z]{3,30}"
+      />
       <br />
       <label id="lastName">LastName</label>
       <input for="lastName" type="text" placeholder="Enter last name" /> <br />
@@ -19,13 +26,20 @@
         for="password"
         type="password"
         placeholder="Enter 8 char password"
+        required
+        pattern="[a-zA-Z0-9$%@]{4,30}"
       />
       <br />
       <label id="email">Email</label>
       <input for="email" type="email" placeholder="Enter email address" />
       <br />
       <label id="contactNo">Contact No</label>
-      <input for="contactNo" type="tel" placeholder="Enter contact number" />
+      <input
+        for="contactNo"
+        type="tel"
+        placeholder="Enter contact number"
+        pattern="[0-9]{10,10}"
+      />
       <br />
       <label id="dob">Date Of Birth</label>
       <input type="date" for="dob" /> <br />
@@ -37,6 +51,26 @@
       <input type="checkbox" />
       <label>Agree terms and conditions</label> <br />
       <input type="Submit" value="Register" />
+    </form>
+    <hr />
+    <!--Data list-->
+    <h3>search for countries</h3>
+    <form>
+      <input id="country_name" name="country_name" type="text" list="country" />
+      <datalist id="country">
+        <option value="Australia"></option>
+        <option value="Austria"></option>
+        <option value="Algeria"></option>
+        <option value="Andorra"></option>
+        <option value="Angola"></option>
+      </datalist>
+    </form>
+    <hr />
+    <form>
+      <label>Search</label>
+      <input type="search" placeholder="Enter employee name" />
+      <label>Age</label>
+      <input type="number" min="10" max="80" />
     </form>
   </body>
 </html>
