@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
+    <link rel="stylesheet" href="../css/basics.css" />
   </head>
   <body>
     <h3>Register Form</h3>
@@ -18,9 +19,9 @@
         autofocus
         pattern="[a-zA-Z]{3,30}"
       />
-      <br />
+
       <label id="lastName">LastName</label>
-      <input for="lastName" type="text" placeholder="Enter last name" /> <br />
+      <input for="lastName" type="text" placeholder="Enter last name" />
       <label id="password">Password</label>
       <input
         for="password"
@@ -29,10 +30,10 @@
         required
         pattern="[a-zA-Z0-9$%@]{4,30}"
       />
-      <br />
+
       <label id="email">Email</label>
       <input for="email" type="email" placeholder="Enter email address" />
-      <br />
+
       <label id="contactNo">Contact No</label>
       <input
         for="contactNo"
@@ -40,22 +41,28 @@
         placeholder="Enter contact number"
         pattern="[0-9]{10,10}"
       />
-      <br />
+
       <label id="dob">Date Of Birth</label>
-      <input type="date" for="dob" /> <br />
-      <label id="gender">Gender</label> <br />
-      <label>Male</label>
-      <input type="radio" name="gender" />
-      <label>Female</label>
-      <input type="radio" name="gender" /> <br />
-      <input type="checkbox" />
-      <label>Agree terms and conditions</label> <br />
+      <input type="date" for="dob" />
+      <label id="gender"
+        >Gender: <label>Male</label>
+        <input type="radio" name="gender" />
+        <label>Female</label>
+        <input type="radio" name="gender"
+      /></label>
+
+      <label
+        ><input type="checkbox" style="margin-right: 5px" />Agree terms and
+        conditions</label
+      >
+
       <input type="Submit" value="Register" />
     </form>
     <hr />
     <!--Data list-->
     <h3>search for countries</h3>
     <form>
+      <label>Countries</label>
       <input id="country_name" name="country_name" type="text" list="country" />
       <datalist id="country">
         <option value="Australia"></option>

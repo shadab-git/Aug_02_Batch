@@ -1,0 +1,72 @@
+/* single/multi line comment */
+/* 
+ inline style - higest priority
+ embedded style
+ external style
+*/
+
+/* Universal selector */
+* {
+    margin:0px;
+    padding:0px
+}
+
+/* grouping multiple classes */
+.pre1, .pre2 {
+    font-family: cursive;
+}
+
+.pre1 {
+    text-transform: capitalize;
+}
+
+/* Id selector */
+#img2 {
+    width: 300px;
+    height: 300px;
+}
+form {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin-bottom: 10px;
+    padding:5px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 15px;
+    background-color: aqua;
+    padding: 20px
+}
+a {
+    text-decoration: none;
+}
+/* All list items present inside ul */
+ul>li {
+    text-transform: uppercase;
+}
+
+/* all list items present after li with class name blue*/
+li.blue~li>a{
+    color:blue
+}
+
+/* second element only if it immediately follows the first element.*/
+/* li.blue+li>a {
+    color: blue
+} */
+
+/* all list items*/
+/* li.blue>a{
+    color: blue;
+} */
