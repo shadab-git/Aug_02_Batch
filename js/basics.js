@@ -150,3 +150,87 @@ function add(num1, num2) {
 }
 
 add(10, 20); //30
+
+// map, filter
+function square(num) {
+  return num * num;
+}
+// numArr = [ 10, 15, 25 ]
+// console.log(numArr);
+const newNumArr = numArr.map(square);
+console.log(newNumArr);
+
+// filter
+const filteredNumbers = numArr.filter(notEqual25);
+console.log(filteredNumbers);
+
+function grtThan50(num) {
+  return num > 50;
+}
+
+function lessThan50(num) {
+  return num < 50;
+}
+
+function notEqual25(num) {
+  return num != 25;
+}
+
+// class
+class Employee {
+  // initializing emp obj
+  constructor(empId, empName, email) {
+    this.empId = empId;
+    this.empName = empName;
+    this.email = email;
+  }
+
+  // read
+  getEmpId() {
+    return this.empId;
+  }
+  getEmpName() {
+    return this.empName;
+  }
+  getEmail() {
+    return this.email;
+  }
+  // update
+  setEmpId(empId) {
+    this.empId = empId;
+  }
+  setEmpName(name) {
+    this.empName = name;
+  }
+  setEmail(email) {
+    this.email = email;
+  }
+}
+
+// create emp obj - 'new' keyword
+const emp1 = new Employee(1001, "Ram", "ram@example.com");
+const emp2 = new Employee(1002, "Sam", "sam@example.com");
+
+// get obj details
+console.log(emp1);
+console.log(emp2.getEmpName());
+
+// update
+emp2.setEmpName("Sam R");
+console.log(emp2);
+
+// Date/Math
+const date = new Date();
+console.log(date); // return current date
+console.log(date.getDate()); // 11
+console.log(date.getDay()); // 4(0- Sunday 6-Saturday)
+console.log(date.getTime()); // time in milliseconds - 1660194311601
+
+console.log(Math.PI); // 3.14
+console.log(Math.pow(2, 3)); //8
+console.log(Math.sqrt(144)); //12
+console.log(Math.random()); // 0.13615338799177956 (returns random number between 0-1)
+console.log(Math.ceil(4.3)); //5 - upside nearest rounded value
+console.log(Math.floor(4.6)); // 4 - downside nearest rounded value
+
+// DOM - Document Object Model
