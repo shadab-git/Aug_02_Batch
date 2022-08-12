@@ -31,6 +31,8 @@ public class StringDemo {
 		String str2 = "Hello";
 		String str13 = str1;
 		
+		
+		
 		System.out.println(str1==str2);//true
 		System.out.println(str1==str13);//true
 		
@@ -65,6 +67,9 @@ public class StringDemo {
 		System.out.println(str5);
 		System.out.println(str6);// null
 		
+		str5 =null;
+		System.out.println("$$$$$"+str5);
+		
 		// equals - content comparison& '==' reference comparison
 		
 		System.out.println(str4==str8); // true
@@ -84,6 +89,8 @@ public class StringDemo {
 		String[] strArr= "Hello World".split(" ");
 		System.out.println(strArr[0]+" "+strArr[1]);
 		System.out.println(String.join("-", "Hello", "World!"));
+		
+		
 		
 	}
 
