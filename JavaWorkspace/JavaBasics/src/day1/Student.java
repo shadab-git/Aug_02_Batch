@@ -96,6 +96,7 @@ public class Student {
 
 	public static void main(String[] args) {
 		// code
+		int z= 100;
 		// create objects
 		Student std1 = new Student(1001, "Ram", "ram@gmail.com", "9999911111" );
 		Student std2 = new Student(1002, "Sam", "sam@gmail.com", "9999911112" );
